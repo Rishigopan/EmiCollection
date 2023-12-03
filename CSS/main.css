@@ -1,0 +1,607 @@
+    body {
+        background-color: #e4e4e4;
+    }
+    
+    #main {
+        margin-top: 50px;
+    }
+    
+    .navbar a .material-icons {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .main-content {
+        margin-top: 60px;
+    }
+    
+    .main-card {
+        border: none;
+        border-radius: 20px;
+        background-color: #330033;
+        /*
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='635' height='635' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23444442' stroke-width='2'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23555555'%3E%3Ccircle cx='769' cy='229' r='8'/%3E%3Ccircle cx='539' cy='269' r='8'/%3E%3Ccircle cx='603' cy='493' r='8'/%3E%3Ccircle cx='731' cy='737' r='8'/%3E%3Ccircle cx='520' cy='660' r='8'/%3E%3Ccircle cx='309' cy='538' r='8'/%3E%3Ccircle cx='295' cy='764' r='8'/%3E%3Ccircle cx='40' cy='599' r='8'/%3E%3Ccircle cx='102' cy='382' r='8'/%3E%3Ccircle cx='127' cy='80' r='8'/%3E%3Ccircle cx='370' cy='105' r='8'/%3E%3Ccircle cx='578' cy='42' r='8'/%3E%3Ccircle cx='237' cy='261' r='8'/%3E%3Ccircle cx='390' cy='382' r='8'/%3E%3C/g%3E%3C/svg%3E");
+    /*background-color: yellow;*/
+        background: url('../gradient-dynamic-blue-lines-background_23-2148995756.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .main-card #add_manufacturer {
+        padding: 0px 30px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .main-card #add_product {
+        padding: 0px 50px;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .main-content .toolbar .card {
+        background-color: #1e87ff;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    .main-card #add_manufacturer {
+        padding: 0px 30px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .main-card .btn_edit {
+        border-radius: 50%;
+        color: green;
+        border: none;
+        background-color: transparent;
+        margin-right: 8px;
+    }
+    
+    .main-card .btn_edit:hover {
+        background-color: green;
+        color: white;
+    }
+    
+    .main-card .btn_delete {
+        background-color: transparent;
+        color: red;
+        border: none;
+        border-radius: 50%;
+    }
+    
+    .main-card .btn_delete:hover {
+        background-color: red;
+        color: white;
+    }
+    
+    .main-card .view_details {
+        background-color: transparent;
+        margin-top: 2rem;
+        border-radius: 0px;
+        max-height: 450px;
+        min-height: 450px;
+        border: none;
+        overflow-y: scroll;
+    }
+    
+    .main-card .view_details ul li {
+        margin: 10px 5px;
+        border-radius: 10px;
+        background-color: white;
+    }
+    
+    .main-card .product_details label {
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: white;
+    }
+    
+    .main-card .product_details input,
+    .main-card .product_details select {
+        height: 45px;
+        background-color: rgb(246, 246, 246);
+    }
+    
+    .main-card .product_details input:focus,
+    .main-card .product_details select:focus {
+        box-shadow: none !important;
+    }
+    
+    .main-card .product_details .submit_btn {
+        margin-top: 30px;
+    }
+    
+    .main-card .product_details .submit_btn button {
+        width: 200px;
+        height: 50px;
+    }
+    
+    .btn_submit {
+        background-color: white;
+        border: 3px solid #003282;
+        color: #003282;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    
+    .btn_submit:hover,
+    .btn_submit:focus {
+        border: 3px solid #1e87ff;
+        background-color: white;
+        color: #1e87ff;
+    }
+    
+    .product_details #add_itemDiv .btn_add {
+        border: 1px solid white;
+        color: white;
+    }
+    
+    .product_details #add_itemDiv .btn_add:focus,
+    .product_details #add_itemDiv .btn_add:hover {
+        background-color: white;
+        color: #003282;
+    }
+    
+    .display_card {
+        max-height: 400px;
+    }
+    
+    .display_card ul li img {
+        height: 70px;
+        width: 70px;
+        object-fit: cover;
+    }
+    
+    .display_card ul li {
+        border-left: 4px solid #fe8a00;
+        background-color: #f8e5b4;
+        margin: 8px 0px;
+    }
+    
+    .display_card .item_list {
+        overflow-y: scroll;
+    }
+    
+    .display_card .item_list::-webkit-scrollbar {
+        width: 0;
+    }
+    
+    .main-card .product_details .inputs {
+        padding: 12px 3px;
+    }
+    
+    .main-card .view_details {
+        background-color: transparent;
+        margin-top: 2rem;
+        border-radius: 0px;
+        max-height: 450px;
+        min-height: 450px;
+        border: none;
+        overflow-y: scroll;
+    }
+    
+    .main-card .view_details ul li {
+        margin: 10px 5px;
+        border-radius: 10px;
+        background-color: white;
+        /* box-shadow: 0px 8px 15px rgb(230, 229, 229); */
+    }
+    
+    .main-card .view_table {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border-radius: 0px;
+        border: none;
+        background-color: rgb(255, 255, 255);
+        padding: 10px 0px;
+        border-radius: 20px;
+    }
+    
+    .view_table .top {
+        margin-top: 5px;
+        padding: 10px 15px;
+        padding-bottom: 6px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .view_table .bottom {
+        border-top: 1px solid lightgray;
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .btn-menu {
+        background-color: #003282;
+        color: white;
+    }
+    
+    .btn-menu span {
+        vertical-align: middle;
+    }
+    
+    .btn-menu i {
+        vertical-align: middle;
+    }
+    
+    .btn-menu:hover,
+    .btn-menu:focus {
+        background-color: #1e87ff;
+        color: white;
+    }
+    
+    .main-card .btn_edit {
+        border-radius: 50%;
+        color: rgb(7, 190, 7);
+        border: none;
+        background-color: transparent;
+        margin-right: 8px;
+    }
+    
+    .main-card .btn_edit:hover {
+        background-color: rgb(7, 190, 7);
+        color: white;
+    }
+    
+    .main-card .btn_delete {
+        background-color: transparent;
+        color: red;
+        border: none;
+        border-radius: 50%;
+    }
+    
+    table tbody .btn {
+        padding: 3px 5px;
+        border: none;
+        border-radius: 50%;
+    }
+    
+    table tbody .edit_btn:hover {
+        color: rgb(7, 190, 7);
+    }
+    
+    table tbody .del_btn:hover {
+        color: red;
+    }
+    
+    .main-card .btn_delete:hover {
+        background-color: red;
+        color: white;
+    }
+    
+    .main-card .img-box {
+        margin-top: 2.5rem;
+        overflow: hidden;
+    }
+    
+    .main-card .img-box .photo {
+        height: 250px;
+        width: 100%;
+        border-radius: 10px;
+        position: relative;
+        border: 3px dashed #fe8a00;
+    }
+    
+    .main-card .img-box .photo img {
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+        z-index: -5;
+    }
+    
+    .main-card .img-box .photo_add {
+        top: 0;
+        height: 250px;
+        width: 100%;
+        border-radius: 0px 0px 6px 6px;
+        background-color: rgba(0, 0, 0, 0);
+        position: absolute;
+    }
+    
+    .main-card .img-box .photo_add label {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .main-card .img-box .img-details {
+        margin-top: 10px;
+    }
+    
+    .main-card .img-box .img-details label {
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+    
+    .main-card .img-box .img-details p {
+        font-size: 0.9rem;
+        color: gray;
+    }
+    
+    .title {
+        background-color: #1e87ff;
+        color: white;
+        font-weight: 600;
+        border-radius: 50px;
+    }
+    
+    .disable {
+        opacity: 0.3;
+        pointer-events: none;
+    }
+    
+    #product_table thead {
+        position: sticky;
+        top: 0px;
+    }
+    
+    #product_table tbody .btn {
+        padding: 3px 5px;
+        border: none;
+        border-radius: 50%;
+        color: #fe8000;
+    }
+    
+    #product_table tbody .btn i {
+        vertical-align: middle;
+    }
+    
+    #itemWiseReport tbody .btn {
+        padding: 3px 5px;
+        border: none;
+        border-radius: 50%;
+        color: #fe8000;
+    }
+    
+    #itemWiseReport tbody .btn i {
+        vertical-align: middle;
+    }
+    
+    #itemWiseReport tbody .edit_btn:hover {
+        /*background-color: darkgreen;*/
+        background-color: #fe8000;
+        color: white;
+    }
+    
+    #itemWiseReport tbody .del_btn:hover {
+        /*background-color: darkred;*/
+        background-color: #fe8000;
+        color: white;
+    }
+    
+    .top {
+        margin-top: 5px;
+        padding: 10px 15px;
+        padding-bottom: 6px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid lightgray;
+    }
+    
+    .bottom {
+        border-top: 1px solid lightgray;
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #Customer {
+        margin-top: 0.6rem;
+        border-bottom: 0.01rem solid lightgray;
+    }
+    
+    #Customer img {
+        margin-bottom: 0.3rem;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+    }
+    
+    #itemModal .product_details input {
+        height: 45px;
+    }
+    
+    #itemModal .product_details .inputs {
+        padding: 12px 3px;
+    }
+    
+    #itemModal .product_details .inputs label {
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+    
+    .item_card {
+        max-height: 550px;
+    }
+    
+    .numberInput::-webkit-outer-spin-button,
+    .numberInput::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    #loader {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        width: 100px;
+        height: 100px;
+        border: 16px solid rgb(7, 190, 7);
+        border-radius: 50%;
+        border-top: 16px solid;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+    }
+    
+    .offcanvas #Menu_heading h4 {
+        color: #003282;
+        font-weight: 800;
+        font-size: 35px;
+        padding-left: 30px;
+        margin-top: 10px;
+    }
+    
+    .offcanvas #Menu_options ul {
+        margin-top: 30px;
+    }
+    
+    .offcanvas #Menu_options ul li {
+        padding: 20px 30px;
+    }
+    
+    .offcanvas #Menu_options ul li:hover a span,
+    .offcanvas #Menu_options ul li:hover a i {
+        color: #1e87ff;
+    }
+    
+    .offcanvas #Menu_options ul li a.active span,
+    .offcanvas #Menu_options ul li a.active i {
+        color: #1e87ff;
+        font-size: 21px;
+    }
+    
+    .offcanvas #Menu_options ul li a span {
+        vertical-align: middle;
+        color: gray;
+        font-weight: 600;
+        font-size: 18px;
+        transition: all 0.5s ease;
+    }
+    
+    .offcanvas #Menu_options ul li a {
+        text-decoration: none;
+    }
+    
+    .offcanvas #Menu_options ul li a i {
+        vertical-align: middle;
+        color: gray;
+        margin-right: 10px;
+        font-size: 20px;
+        transition: all 0.5s ease;
+    }
+    
+    #ViewModal .modal-header {
+        background-color: #003282;
+        color: white;
+    }
+    
+    #table_container {
+        max-height: 380px;
+    }
+    
+    #table_container #viewDetailTable thead th {
+        position: sticky;
+        top: 0;
+        background-color: black;
+        color: white;
+    }
+    
+    #table_container #viewDetailTable {
+        counter-reset: tableCount;
+    }
+    
+    #table_container #viewDetailTable .rowCount:before {
+        content: counter(tableCount);
+        counter-increment: tableCount;
+    }
+    
+    #myTab .nav-link {
+        border: 1px solid #1e87ff;
+        border-radius: 10px;
+        color: black;
+        font-weight: 500;
+        text-decoration: none;
+        width: 200px;
+    }
+    
+    #myTab {
+        border: none;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: start;
+    }
+    
+    #myTab .nav-item {
+        border: none;
+    }
+    
+    #myTab .nav-item .active {
+        background-color: #1e87ff;
+        border: 1px solid #1e87ff;
+        color: white;
+    }
+    
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
+        .offcanvas {
+            max-width: 75%;
+        }
+        .main-card {
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        .main-card #add_product {
+            padding: 0px 0px;
+            margin-top: 0px;
+            margin-bottom: 1.2rem;
+        }
+        .main-card .product_details .inputs {
+            padding: 5px 3px;
+        }
+        .main-card .product_details .submit_btn {
+            margin-top: 20px;
+        }
+        .main-card .img-box {
+            margin-top: 0px;
+            overflow: hidden;
+        }
+        .main-card .img-box .photo {
+            height: 90px;
+            width: 90px;
+            border-radius: 10px;
+            position: relative;
+        }
+        .main-card .img-box .photo img {
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+            z-index: -5;
+        }
+        .main-card .img-box .photo_add {
+            top: 0;
+            height: 100%;
+            width: 100%;
+            border-radius: 0px 0px 6px 6px;
+            background-color: rgba(0, 0, 0, 0);
+            position: absolute;
+        }
+        .main-card #add_manufacturer {
+            padding: 0px 5px;
+            margin-top: 0rem;
+            margin-bottom: 0rem;
+        }
+    }
